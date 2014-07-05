@@ -464,13 +464,20 @@ margin on the iframe, cause it breaks stuff. */
 /* The subscribe icon on the footer */
 .subscribe {
     position: absolute;
-    bottom: -70px;
+    bottom: -28px;
     right: 5%;
+    width: 56px;
+    height: 56px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .subscribe paper-fab {
     background: #ffff8d;;
     fill: rgba(0, 0, 0, 0.54);
+}
+
+.subscribe paper-fab::shadow #clip {
+  height: 100%;
 }
 
 .blog-logo {
