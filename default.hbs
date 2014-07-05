@@ -13,6 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="stylesheet" href="{{asset "lib/paper-button/paper-button.css"}}">
+    <link rel="import" href="{{asset "lib/paper-button/paper-button.html"}}">
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
@@ -20,6 +22,8 @@
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
+
+    <script type="text/javascript" src="{{asset "lib/platform/platform.js"}}"></script>
 </head>
 <body class="{{body_class}}">
 
