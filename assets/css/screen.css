@@ -651,7 +651,7 @@ margin on the iframe, cause it breaks stuff. */
 .post-template .post-header .blog-title {
   float: left;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .post-template .blog-title {
@@ -972,7 +972,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .blog-title {
-        font-size: 4rem;
+        font-size: 2rem;
         letter-spacing: -1px;
     }
 
@@ -1050,7 +1050,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .blog-title {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .blog-description {
