@@ -453,7 +453,7 @@ margin on the iframe, cause it breaks stuff. */
     display: table;
     width: 100%;
     height: 60%;
-    margin-bottom: 5rem;
+    margin-bottom: 30px;
     text-align: center;
     color: #fff;
     background: #009688 no-repeat center center;
@@ -629,8 +629,29 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Insert some mad padding up in the header for better spacing */
 .post-template .post-header {
-    padding: 60px 0;
+    padding: 0;
+    margin-bottom: 30px;
     text-align: center;
+    background: #009688;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+.post-template .post-header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.post-template .post-header .post-header-row {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.post-template .post-header .blog-title {
+  float: left;
+  color: white;
+  font-size: 3rem;
 }
 
 .post-template .blog-title {
@@ -947,7 +968,7 @@ margin on the iframe, cause it breaks stuff. */
         box-sizing: border-box;
         height: auto;
         min-height: 240px;
-        padding: 15% 0;
+        padding: 30px 0;
     }
 
     .blog-title {
@@ -970,7 +991,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .post-template .post-header {
-        padding: 40px 0;
+        padding: 0;
     }
 
     h1 {
@@ -999,6 +1020,12 @@ margin on the iframe, cause it breaks stuff. */
 
 @media only screen and (max-width: 500px) {
 
+    .post-template .post-header .post-header-row {
+        max-width: auto;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
     .blog-logo img {
         max-height: 80px;
     }
@@ -1019,7 +1046,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .site-head {
-        padding: 10% 0;
+        padding: 30px 0;
     }
 
     .blog-title {
@@ -1051,7 +1078,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .post-template .post-header {
-        padding: 30px 0;
+        padding: 0;
     }
 
     .post-template .site-footer {
