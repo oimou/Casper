@@ -535,7 +535,6 @@ margin on the iframe, cause it breaks stuff. */
     border-radius: 2px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 -1px 1.5px rgba(0, 0, 0, 0.12);
     position: relative;
-    width:100%;
     max-width:700px;
     margin: 8px auto 32px;
     padding: 32px;
@@ -1011,6 +1010,7 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 0.9em;
         line-height: 1.6em;
         margin-bottom: 8px;
+        max-width: none;
     }
 
     .post-template .post {
