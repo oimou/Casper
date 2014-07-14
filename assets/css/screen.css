@@ -274,7 +274,7 @@ hr {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.6em 0 1.6em -2.2em;
+    margin: 1.6em 1.6em 1.6em 0;
     padding: 0 0 0 1.6em;
     border-left: #4a4a4a 0.4em solid;
 }
@@ -692,9 +692,11 @@ margin on the iframe, cause it breaks stuff. */
 /* Break out larger images to be wider than the main text column
    the class is applied with jQuery */
 .post-content .full-img {
+    /*
     width: 126%;
     max-width: none;
     margin: 0 -13%;
+    */
 }
 
 /* Words */
@@ -710,8 +712,14 @@ margin on the iframe, cause it breaks stuff. */
 .post-footer {
     position: relative;
     margin: 4rem 0 0 0;
-    padding: 4rem 0 0 0;
+    padding: 48px 0 32px 0;
     border-top: #EBF2F6 1px solid;
+}
+
+.post-footer:after {
+  content: '';
+  clear: both;
+  display: block;
 }
 
 .post-footer h4 {
@@ -762,6 +770,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Create some space to the right for the share links */
 .post-footer .author {
+    float: left;
     margin-right: 180px;
 }
 
@@ -770,9 +779,7 @@ margin on the iframe, cause it breaks stuff. */
    to be flexible at smaller screen sizes while the share
    links remain at a fixed width the whole time */
 .post-footer .share {
-    position: absolute;
-    top: 4rem;
-    right: 0;
+    float: right;
     width: 140px;
 }
 
